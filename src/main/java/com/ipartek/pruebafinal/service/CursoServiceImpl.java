@@ -18,5 +18,30 @@ public class CursoServiceImpl implements CursoService {
 	public List<Curso> listar() {
 		return dao.getAll();
 	}
+	
+	@Override
+	public List<Curso> listarDiez() {
+		return dao.getAllTen();
+	}
+
+	@Override
+	public Curso buscarPorId(long id) {
+		return dao.getById(id);
+	}
+
+	@Override
+	public boolean crear(Curso cur) {
+		return dao.insert(cur);
+	}
+
+	@Override
+	public boolean modificar(Curso cur) {
+		return dao.update(cur);
+	}
+
+	@Override
+	public boolean eliminar(long id) {
+		return dao.delete(id);
+	}
 
 }

@@ -14,8 +14,8 @@ public class CursoMapper implements RowMapper<Curso> {
 		Curso cur = new Curso();
 
 		cur.setId(rs.getLong("id"));
-		cur.setNombrecur(rs.getString("nombrecurso"));
-		cur.setCodigocur(rs.getString("codigocurso"));
+		cur.setNombrecur(rs.getString("nomcurso"));
+		cur.setCodigocur(rs.getString("codcurso"));
 
 		return cur;
 	}

@@ -15,5 +15,15 @@ public interface CursoDAO {
 	void setDatasource(DataSource ds);
 	
 	List<Curso> getAll();
+	
+	Curso getById(long id);
+	
+	boolean insert(Curso cur);
+	
+	boolean update(Curso cur);
+	
+	boolean delete(long id);
+
+	List<Curso> getAllTen();
 
 }

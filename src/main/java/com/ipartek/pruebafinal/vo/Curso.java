@@ -1,9 +1,15 @@
 package com.ipartek.pruebafinal.vo;
 
+import javax.validation.constraints.Size;
+
 public class Curso {
 	
 	private long id;
+	
+	@Size(message="Debe de tener entre {min} y {max}", min=3, max=255)
 	private String nombrecur;
+	
+	@Size(message="Debe de tener entre {min} y {max}", min=3, max=30)
 	private String codigocur;
 	
 	public Curso() {

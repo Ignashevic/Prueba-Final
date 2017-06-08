@@ -7,6 +7,7 @@
 
 <head>
 
+	<base href="/pruebafinal/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +21,19 @@
     
 	<!-- Custom -->
 	<link href="resources/css/custom.css" rel="stylesheet">
+	
+	<link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 <body>
+
+	<nav class="navbar navbar-default navbar-static-top">
+	  <div class="container">
+    	<img alt="Brand" src="http://sc1.emgcdn.net/assets/es/logos/centro/id/56051/size/m.png">
+	  	<button type="button" class="btn btn-default navbar-btn marginizda">
+	  		<a href="admin">Administración</a>
+	  	</button>
+	  </div>
+	</nav>
