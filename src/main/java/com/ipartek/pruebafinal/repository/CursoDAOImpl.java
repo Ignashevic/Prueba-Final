@@ -45,6 +45,7 @@ public class CursoDAOImpl implements CursoDAO {
 	
 	
 	private static final String SQL_GET_ALL = "SELECT * FROM `cursos` ORDER BY `id` DESC;";
+	private static final String SQL_GET_ALL_FILTER = "SELECT * FROM `cursos` WHERE `nomcurso` LIKE '%' ? '%' ORDER BY `id` DESC LIMIT 1000;";
 	private static final String SQL_GET_LAST_TEN = "SELECT * FROM `cursos` ORDER BY `id` DESC LIMIT 10;";
 	private static final String SQL_INSERT = "INSERT INTO `cursos` (`nomcurso`, `codcurso`) VALUES (?,?);";
 	private static final String SQL_UPDATE = "UPDATE `cursos` SET `nomcurso`= ? , `codcurso`= ?  WHERE `id`= ? ;";
@@ -66,6 +67,34 @@ public class CursoDAOImpl implements CursoDAO {
 		}
 		
 		return lista;
+	}
+	
+	@Override
+	public List<Curso> getAll(String filter) {
+
+		ArrayList<Curso> listacursos = new ArrayList<Curso>();
+
+		try {
+
+			if (filter == null) {
+				listacursos = (ArrayList<Curso>) this.jdbcTemplate.query(SQL_GET_ALL, new CursoMapper());
+			} else {
+				listacursos = (ArrayList<Curso>) this.jdbcTemplate.query(SQL_GET_ALL_FILTER, new Object[] { filter },
+						new CursoMapper());
+
+			}
+
+		} catch (EmptyResultDataAccessException e) {
+
+			this.logger.warn("No existen cursos todavia");
+
+		} catch (Exception e) {
+
+			this.logger.error(e.getMessage());
+
+		}
+
+		return listacursos;
 	}
 	
 	@Override

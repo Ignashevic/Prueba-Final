@@ -8,6 +8,8 @@ public interface CursoService {
 	
 	List<Curso> listar();
 	
+	List<Curso> listar(String filter);
+	
 	List<Curso> listarDiez();
 	
 	Curso buscarPorId(long id);

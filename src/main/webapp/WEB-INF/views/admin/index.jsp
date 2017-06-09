@@ -1,14 +1,15 @@
 <%@ include file="../includes/header.jsp" %>
 
-<h1>Backoffice!</h1>
-
-<a href="admin/curso/edit" class="btn btn-default">Crear curso nuevo</a>
-
 <div class="container">
-	<div class="row">
+	<div class="row mainbackoffice">
 		<c:if test="${not empty msg}">
 			<p class="alert alert-success" role="alert">${msg}</p>
 		</c:if>
+		<h2>Cursos totales</h2><br>
+		<button type="button" class="btn btn-info navbar-btn btnmigracion">
+	  		<a href="admin/curso/migrar">Migración Excel</a>
+	  	</button>
+		<a href="admin/curso/edit"><i class="fa fa-plus-square fa-2x" aria-hidden="true"></i></a>
 		<table class="tablePlugin" cellspacing="0" width="100%">
 			<thead>
 				<tr>
@@ -38,5 +39,5 @@
 
 
 
-<%@ include file="../includes/footer.jsp" %>
+<%@ include file="../includes/footer2.jsp" %>
 

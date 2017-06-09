@@ -20,6 +20,11 @@ public class CursoServiceImpl implements CursoService {
 	}
 	
 	@Override
+	public List<Curso> listar(String filter) {
+		return dao.getAll(filter);
+	}
+	
+	@Override
 	public List<Curso> listarDiez() {
 		return dao.getAllTen();
 	}

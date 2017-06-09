@@ -19,6 +19,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<!-- Custom -->
 	<link href="resources/css/custom.css" rel="stylesheet">
 	
@@ -31,7 +32,7 @@
 
 	<nav class="navbar navbar-default navbar-static-top">
 	  <div class="container">
-    	<img alt="Brand" src="http://sc1.emgcdn.net/assets/es/logos/centro/id/56051/size/m.png">
+    	<a href="#"><img alt="Brand" src="http://sc1.emgcdn.net/assets/es/logos/centro/id/56051/size/m.png"></a>
 	  	<button type="button" class="btn btn-default navbar-btn marginizda">
 	  		<a href="admin">Administración</a>
 	  	</button>

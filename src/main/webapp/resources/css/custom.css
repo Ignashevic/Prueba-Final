@@ -60,3 +60,48 @@
 .nombrered{
 	margin-top:10px;
 }
+
+.homewrapper{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+.cajaultimos10{
+	padding-top:75px;	
+}
+
+.listaultimos10{
+	list-style:none;
+}
+
+.listaultimos10 li{
+	padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.ojo{
+	float: right;
+}
+
+.mainbackoffice{
+	padding-top:50px;
+	padding-bottom:75px;
+}
+
+.panel{
+	margin:0px;
+}
+
+.panel-body{
+	background:#d4d4d4;
+}
+
+.btnmigracion{
+	margin-top:0px;
+	background:#72c7dc;
+}
+
+.btnmigracion a{
+	color:white;
+}
+

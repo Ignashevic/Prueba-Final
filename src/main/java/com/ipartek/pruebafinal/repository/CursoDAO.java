@@ -26,4 +26,6 @@ public interface CursoDAO {
 
 	List<Curso> getAllTen();
 
+	List<Curso> getAll(String filter);
+
 }

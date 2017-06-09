@@ -33,16 +33,6 @@ public class AdminController {
 		
 	}
 	
-	@RequestMapping(value = "", method = RequestMethod.GET)
-	public String listarDiez(Model model) {
-		LOG.info("Entrando en admin");
-		
-		model.addAttribute("cursos", this.servicecurso.listarDiez());
-		
-		return "admin/index";
-		
-	}
-	
 	@RequestMapping(value = "/admin/curso/edit", method = RequestMethod.GET)
 	public String formularioCrear(Model model) {
 		LOG.info("Entrando en admin");
@@ -107,6 +97,15 @@ public class AdminController {
 		model.addAttribute("curso", new Curso());
 		model.addAttribute("cursos", this.servicecurso.listar());
 		return "admin/index";
+	}
+	
+	@RequestMapping(value = "/admin/curso/migrar", method = RequestMethod.GET)
+	public String subirarchivo(Model model) {
+		LOG.info("Entrando en admin");
+		
+		
+
+		return "migrar";
 	}
 
 }
