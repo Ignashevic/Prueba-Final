@@ -14,18 +14,27 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ipartek.pruebafinal.service.CursoService;
 import com.ipartek.pruebafinal.vo.Curso;
-
-@Controller
+/**
+ * 
+ * @author Curso
+ *
+ */
+@Controller()
 @RequestMapping(value = "/api/cursos/")
 public class CursosApi {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(CursosApi.class);
 	
-	@Autowired
-	CursoService servicecurso;
+	@Autowired()
+	private CursoService servicecurso;
 	
+	/**
+	 * 
+	 * @param filter del inicio para el autocomplete de Jquery
+	 * @return arraylist de cursos que hemos filtrado
+	 */
 	@RequestMapping(value = "", method = RequestMethod.GET)
-	public @ResponseBody ArrayList<Curso> listar(@RequestParam(value = "filter", required = false) String filter) {
+	public @ResponseBody() ArrayList<Curso> listar(@RequestParam(value = "filter", required = false) String filter) {
 
 		ArrayList<Curso> cursos = null;
 

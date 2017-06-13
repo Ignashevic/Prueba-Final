@@ -26,7 +26,11 @@ import com.ipartek.pruebafinal.mapper.CursoMapper;
 import com.ipartek.pruebafinal.vo.Curso;
 
 
-
+/**
+ * 
+ * @author Curso
+ *
+ */
 @Repository(value ="cursodao")
 public class CursoDAOImpl implements CursoDAO {
 	
@@ -44,15 +48,15 @@ public class CursoDAOImpl implements CursoDAO {
 	}
 	
 	
-	private static final String SQL_GET_ALL = "SELECT * FROM `cursos` ORDER BY `id` DESC;";
-	private static final String SQL_GET_ALL_FILTER = "SELECT * FROM `cursos` WHERE `nomcurso` LIKE '%' ? '%' ORDER BY `id` DESC LIMIT 1000;";
-	private static final String SQL_GET_LAST_TEN = "SELECT * FROM `cursos` ORDER BY `id` DESC LIMIT 10;";
+	private static final String SQL_GET_ALL = "SELECT `id`, `nomcurso`, `codcurso` FROM `cursos` ORDER BY `id` DESC;";
+	private static final String SQL_GET_ALL_FILTER = "SELECT `id`, `nomcurso`, `codcurso` FROM `cursos` WHERE `nomcurso` LIKE '%' ? '%' ORDER BY `id` DESC LIMIT 1000;";
+	private static final String SQL_GET_LAST_TEN = "SELECT `id`, `nomcurso`, `codcurso` FROM `cursos` ORDER BY `id` DESC LIMIT 10;";
 	private static final String SQL_INSERT = "INSERT INTO `cursos` (`nomcurso`, `codcurso`) VALUES (?,?);";
 	private static final String SQL_UPDATE = "UPDATE `cursos` SET `nomcurso`= ? , `codcurso`= ?  WHERE `id`= ? ;";
 	private static final String SQL_DELETE = "DELETE FROM `cursos` WHERE `id` = ?;";
 	private static final String SQL_GET_BY_ID = "SELECT `id`, `nomcurso`, `codcurso` FROM `cursos` WHERE `id` = ?";
 
-	@Override
+	@Override()
 	public List<Curso> getAll() {
 		ArrayList<Curso> lista = new ArrayList<Curso>();
 		
@@ -69,7 +73,7 @@ public class CursoDAOImpl implements CursoDAO {
 		return lista;
 	}
 	
-	@Override
+	@Override()
 	public List<Curso> getAll(String filter) {
 
 		ArrayList<Curso> listacursos = new ArrayList<Curso>();
@@ -97,7 +101,7 @@ public class CursoDAOImpl implements CursoDAO {
 		return listacursos;
 	}
 	
-	@Override
+	@Override()
 	public List<Curso> getAllTen() {
 		ArrayList<Curso> lista = new ArrayList<Curso>();
 		
@@ -114,7 +118,7 @@ public class CursoDAOImpl implements CursoDAO {
 		return lista;
 	}
 
-	@Override
+	@Override()
 	public Curso getById(long id) {
 		Curso cur = null;
 		try {
@@ -128,7 +132,7 @@ public class CursoDAOImpl implements CursoDAO {
 		return cur;
 	}
 
-	@Override
+	@Override()
 	public boolean insert(final Curso cur) {
 		boolean resul = false;
 		try {
@@ -155,7 +159,7 @@ public class CursoDAOImpl implements CursoDAO {
 		return resul;
 	}
 
-	@Override
+	@Override()
 	public boolean update(Curso cur) {
 		boolean resul = false;
 		int affectedRows = -1;
@@ -171,7 +175,7 @@ public class CursoDAOImpl implements CursoDAO {
 		return resul;
 	}
 
-	@Override
+	@Override()
 	public boolean delete(long id) {
 		boolean resul = false;
 		try {

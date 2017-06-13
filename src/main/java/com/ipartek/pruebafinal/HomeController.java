@@ -15,18 +15,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.ipartek.pruebafinal.service.CursoService;
 
 /**
- * Handles requests for the application home page.
+ * 
+ * @author Curso
+ *
  */
-@Controller
+@Controller()
 public class HomeController {
 	
-	@Autowired
+	@Autowired()
 	private CursoService servicecurso;
 	
 	private static final Logger LOG = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
-	 * Simply selects the home view to render by returning its name.
+	 * metodo basico que se crea automaticamente
+	 * @param locale idioma
+	 * @param model modelo
+	 * @return a la pagina deseada
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {

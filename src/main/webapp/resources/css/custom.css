@@ -10,29 +10,6 @@
 	text-align:center;
 }
 
-.barrafooter{
-	background-color:#72c7dc;
-	padding-bottom:25px;
-	padding-top:25px;
-	color:white;
-}
-
-.cajaredsocial{
-	padding: 2%;
-}
-
-.rrss{
-	width: 100%;
-}
-
-.prueba{
-	background: #0383a2;
-	border-radius:15px;
-	width: 85px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
 .listafooter{
 	list-style:none;
 }
@@ -103,5 +80,19 @@
 
 .btnmigracion a{
 	color:white;
+}
+
+.filaredes{
+	padding-top: 25px;
+}
+
+.icorrss{
+	width:30px;
+}
+
+#ui-id-1{
+	overflow-x: hidden;
+    overflow-y: scroll;
+	height: 400px;
 }
 

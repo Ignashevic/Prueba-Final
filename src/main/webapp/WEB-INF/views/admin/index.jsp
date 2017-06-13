@@ -9,7 +9,7 @@
 		<button type="button" class="btn btn-info navbar-btn btnmigracion">
 	  		<a href="admin/curso/migrar">Migración Excel</a>
 	  	</button>
-		<a href="admin/curso/edit"><i class="fa fa-plus-square fa-2x" aria-hidden="true"></i></a>
+		<a href="admin/curso/edit"><span class="fa fa-plus-square fa-2x" aria-hidden="true"></span></a>
 		<table class="tablePlugin" cellspacing="0" width="100%">
 			<thead>
 				<tr>
@@ -26,14 +26,29 @@
 					<td>${cur.nombrecur}</td>
 					<td>${cur.codigocur}</td>
 					<td>
-						<a href="curso/eliminar/${cur.id}"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
-						<a href="admin/curso/edit/${cur.id}"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></a>
+						<a href="curso/eliminar/${cur.id}"><span class="fa fa-trash fa-2x" aria-hidden="true"></span></a>
+						<a href="admin/curso/edit/${cur.id}" ><span class="fa fa-pencil fa-2x" aria-hidden="true"></span></a>
 					</td>
 				</tr>		
 				</c:forEach>
 			</tbody>	
 		</table>
 	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        ¿Estas seguro de que quieres eliminar el curso?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger">Si, eliminar</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 

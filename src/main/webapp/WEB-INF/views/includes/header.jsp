@@ -32,7 +32,7 @@
 
 	<nav class="navbar navbar-default navbar-static-top">
 	  <div class="container">
-    	<a href="#"><img alt="Brand" src="http://sc1.emgcdn.net/assets/es/logos/centro/id/56051/size/m.png"></a>
+    	<a href="#"><img alt="Logotipo Ipartek" src="http://sc1.emgcdn.net/assets/es/logos/centro/id/56051/size/m.png"></a>
 	  	<button type="button" class="btn btn-default navbar-btn marginizda">
 	  		<a href="admin">Administración</a>
 	  	</button>

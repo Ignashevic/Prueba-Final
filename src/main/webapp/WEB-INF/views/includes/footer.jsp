@@ -1,36 +1,15 @@
-<div class="col-md-12 barrafooter">
-	<div class="container">
-		<div class="row center">
-			<h2>Siguenos en redes sociales</h2>
-			<div class="col-md-3 center cajaredsocial">
-				<div class="prueba">
-					<img class="rrss" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
-				</div>
-				<p class="nombrered">Twitter</p>
-			</div>
-			<div class="col-md-3 center cajaredsocial">
-				<div class="prueba">
-					<img class="rrss" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
-				</div>
-				<p class="nombrered">Twitter</p>
-			</div>
-			<div class="col-md-3 center cajaredsocial">
-				<div class="prueba">
-					<img class="rrss" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
-				</div>
-				<p class="nombrered">Twitter</p>
-			</div>
-			<div class="col-md-3 center cajaredsocial">
-				<div class="prueba">
-					<img class="rrss" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
-				</div>
-				<p class="nombrered">Twitter</p>
-			</div>
-		</div>
-	</div>
-</div>
 <div class="col-md-12 columnacopy">
 	<div class="container">
+		<div class="row center filaredes">
+			<div class="col-md-5"></div>
+			<div class="col-md-2">
+				<div class="col-md-3"><img class="icorrss" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Icono Twitter"></div>
+				<div class="col-md-3"><img class="icorrss" src="http://icon-icons.com/icons2/535/PNG/128/Facebook-Icon_icon-icons.com_52904.png" alt="Icono Facebook"></div>
+				<div class="col-md-3"><img class="icorrss" src="https://freeiconshop.com/wp-content/uploads/edd/instagram-new-color-flat-128x128.png" alt="Icono Instagram"></div>
+				<div class="col-md-3"><img class="icorrss" src="http://megaicons.net/static/img/icons_title/27/89/title/metroui-youtube-alt-icon.png" alt="Icono Youtube"></div>
+			</div>
+			<div class="col-md-5"></div>
+		</div>
 		<div class="row center filafooter">
 			<ul class="listafooter">
 				<li>Contacto</li>
@@ -54,7 +33,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-<script src="resources/js/buscador-receta.js"></script>
+<script src="resources/js/buscador-curso.js"></script>
 <script>
 var castellano = {
 	    "sProcessing":     "Procesando...",

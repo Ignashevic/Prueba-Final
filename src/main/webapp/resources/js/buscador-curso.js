@@ -10,12 +10,12 @@
 
 $(function() {
 
-	console.debug('search-receta.js ready');
+	console.debug('search-curso.js ready');
 			
-	$( "#buscar_receta" ).autocomplete({		
+	$( "#buscar_curso" ).autocomplete({		
 		source: function( request, response ) {
 	        $.ajax( {
-	          url: "/pruebafinal/api/cursos/?filter=" + $("#buscar_receta").val(),
+	          url: "/pruebafinal/api/cursos/?filter=" + $("#buscar_curso").val(),
 	          dataType: "json",	          
 	          success: function( data ) {
 	        	var aString = [];
@@ -29,7 +29,7 @@ $(function() {
 	     minLength: 1,
 	     select: function( event, ui ) {
 	       console.debug( "Selected: " + ui.item.value + " id " + ui.item.label );
-	       var url = "admin/curso/edit/" + ui.item.value;
+	       var url = "curso/show/" + ui.item.value;
 	       window.location.href = url;
 	     }
 	});
